@@ -1,4 +1,5 @@
 import React from 'react';
+import './ExpenseTracker.css'
 
 interface ExpenseTrackerProps {
   budget: number;

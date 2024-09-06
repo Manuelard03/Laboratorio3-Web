@@ -28,12 +28,10 @@ const BudgetScreen: React.FC<BudgetScreenProps> = ({
 
   return (
     <div>
-      {/* Si el presupuesto es 0, muestra la pantalla de definición de presupuesto */}
-      {budget === 0 ? (
+        {budget === 0 ? (
         <BudgetInput setBudget={setBudget} />
       ) : (
         <>
-          {/* Si el presupuesto ya está definido, muestra la pantalla principal */}
           <ExpenseTracker budget={budget} expenses={expenses.reduce((total, expense) => total + expense.amount, 0)} />
           <ExpenseList expenses={expenses} />
           <button onClick={() => setShowModal(true)}>Add Expense</button>
