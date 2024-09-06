@@ -1,0 +1,31 @@
+/* MainSection.css */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .main-section h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .main-section button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .main-section button:hover {
+    background-color: #0056b3;
+  }
+  
